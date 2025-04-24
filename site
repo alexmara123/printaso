@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Printaso - Empowering the Creator Economy with Web3. PTO Token for Digital Creators.">
+  <title>Printaso - Empowering Creators with Web3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <h1>Printaso</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Empowering the Creator Economy with Web3</h2>
+      <p>Join the Printaso community and earn PTO tokens for your digital creations!</p>
+      <button onclick="alert('Join the movement!')">Join Now</button>
+    </section>
+
+    <section class="features">
+      <h2>Features</h2>
+      <div class="feature-item">
+        <h3>For Creators</h3>
+        <p>Sell digital goods and get paid in PTO tokens.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Token Utility</h3>
+        <p>Use PTO for exclusive content, staking rewards, and more!</p>
+      </div>
+      <div class="feature-item">
+        <h3>Early Access</h3>
+        <p>Get access to airdrops and creator tools by joining now!</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Printaso. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
