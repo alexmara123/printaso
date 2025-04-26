@@ -5,144 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Printaso</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-    }
-
-    header {
-      background-color: #111;
-      color: #fff;
-      padding: 1rem 0;
-      text-align: center;
-    }
-
-    .navbar {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .navbar a {
-      color: #fff;
-      text-decoration: none;
-      padding: 10px 20px;
-      transition: background-color 0.3s;
-    }
-
-    .navbar a:hover, .navbar a.active {
-      background-color: #007bff;
-    }
-
-    .hero {
-      background-color: #007bff;
-      color: #fff;
-      padding: 50px 20px;
-      text-align: center;
-    }
-
-    .hero h2 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      max-width: 700px;
-      margin: 0 auto;
-    }
-
-    main {
-      padding: 2rem 20px;
-    }
-
-    .about-section {
-      background-color: #fff;
-      padding: 40px 20px;
-      border-radius: 8px;
-      margin-bottom: 2rem;
-    }
-
-    .about-section h2 {
-      font-size: 2rem;
-      margin-bottom: 15px;
-      color: #333;
-    }
-
-    .about-section p {
-      font-size: 1rem;
-      color: #555;
-      line-height: 1.6;
-    }
-
-    .features {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 30px;
-      margin-top: 40px;
-    }
-
-    .feature-item {
-      background-color: #fff;
-      padding: 25px;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      text-align: center;
-    }
-
-    .feature-item h3 {
-      font-size: 1.5rem;
-      color: #333;
-      margin-bottom: 15px;
-    }
-
-    .feature-item p {
-      font-size: 1rem;
-      color: #555;
-      line-height: 1.4;
-    }
-
-    footer {
-      background-color: #111;
-      color: #fff;
-      padding: 20px 0;
-      text-align: center;
-    }
-
-    footer a {
-      color: #fff;
-      margin: 0 10px;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      color: #007bff;
-    }
-
-    /* Button Styling */
-    .button {
-      padding: 10px 30px;
-      background-color: #007bff;
-      color: #fff;
-      border: none;
-      font-size: 1rem;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-
-    .button:hover {
-      background-color: #0056b3;
-    }
-
-    .feature-item button {
-      margin-top: 15px;
-    }
-
-  </style>
 </head>
 <body>
 
@@ -150,12 +12,12 @@
   <div class="navbar">
     <h1>Printaso</h1>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html" class="active">About</a>
-      <a href="token.html">Our Token</a>
-      <a href="revolution.html">The Revolution</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="token.html" class="nav-link">Our Token</a>
+      <a href="revolution.html" class="nav-link">The Revolution</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="contact.html" class="nav-link">Contact</a>
     </nav>
   </div>
 </header>
@@ -204,6 +66,8 @@
     <a href="https://telegram.me/printaso" target="_blank">Telegram</a>
   </div>
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
