@@ -1,90 +1,86 @@
-import React, { useState } from 'react';
+import React from "react";
+import "./style.css"; // Import the stylesheet
 
+// The main App component
 function App() {
-  const [modalOpen, setModalOpen] = useState(false);
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-
-  const handleModalToggle = () => {
-    setModalOpen(!modalOpen);
-  };
-
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (email) {
-      setMessage(`Thanks for joining! We'll be in touch at ${email}`);
-      setModalOpen(false);
-    } else {
-      setMessage("Please enter a valid email.");
-    }
-  };
-
   return (
-    <div style={{ backgroundColor: '#000', color: '#fff', minHeight: '100vh', padding: '2rem', textAlign: 'center' }}>
-      <h1>Printaso</h1>
-      <p>Empowering the Creator Economy with Web3. PTO is the utility token for digital creators — own your work, earn your worth.</p>
-      <button 
-        style={{ marginTop: '2rem', padding: '1rem 2rem', fontSize: '1rem' }} 
-        onClick={handleModalToggle}
-      >
-        Join the Movement
-      </button>
-
-      {/* Modal */}
-      {modalOpen && (
-        <div style={{
-          display: 'flex', 
-          justifyContent: 'center', 
-          alignItems: 'center', 
-          position: 'fixed', 
-          top: 0, 
-          left: 0, 
-          width: '100%', 
-          height: '100%', 
-          backgroundColor: 'rgba(0, 0, 0, 0.7)'
-        }}>
-          <div style={{
-            backgroundColor: '#fff', 
-            padding: '2rem', 
-            borderRadius: '8px', 
-            width: '300px', 
-            textAlign: 'center'
-          }}>
-            <h2>Join the Movement</h2>
-            <form id="join-form" onSubmit={handleSubmit}>
-              <input
-                type="email"
-                id="email-input"
-                value={email}
-                onChange={handleEmailChange}
-                placeholder="Enter your email"
-                style={{ padding: '0.5rem', margin: '0.5rem 0', width: '100%' }}
-                required
-              />
-              <button
-                type="submit"
-                style={{ padding: '0.5rem 2rem', backgroundColor: '#000', color: '#fff', border: 'none', cursor: 'pointer' }}
-              >
-                Submit
-              </button>
-            </form>
-            {message && <p style={{ marginTop: '1rem' }}>{message}</p>}
-            <button 
-              onClick={handleModalToggle} 
-              style={{ marginTop: '1rem', padding: '0.5rem 1rem', backgroundColor: '#ccc' }}
-            >
-              Close
-            </button>
-          </div>
+    <div>
+      {/* Header Section */}
+      <header>
+        <div className="navbar">
+          <h1>Printaso</h1>
+          <nav>
+            <a href="index.html" className="nav-link">
+              Home
+            </a>
+            <a href="about.html" className="nav-link">
+              About
+            </a>
+            <a href="token.html" className="nav-link">
+              Our Token
+            </a>
+            <a href="revolution.html" className="nav-link">
+              The Revolution
+            </a>
+            <a href="services.html" className="nav-link">
+              Services
+            </a>
+            <a href="contact.html" className="nav-link">
+              Contact
+            </a>
+          </nav>
         </div>
-      )}
+      </header>
 
-      <footer style={{ marginTop: '4rem', fontSize: '0.8rem', color: '#aaa' }}>
-        © 2025 Printaso. All rights reserved.
+      {/* Hero Section */}
+      <section className="hero">
+        <h2>Empowering the Future of Creation</h2>
+        <p>Printaso is redefining digital ownership with Web3 and blockchain innovation. Built for creators, by creators.</p>
+        <button className="button">Join the Movement</button>
+      </section>
+
+      {/* About Section */}
+      <section className="about-section">
+        <h2>Our Story</h2>
+        <p>
+          We saw a broken system where artists, designers, and innovators got paid last. Middlemen took the glory and the profits. Printaso was founded to flip the system on its head — putting creators in full control, powered by Web3 technology and our PTO Token.
+        </p>
+      </section>
+
+      {/* Features Section */}
+      <section className="features">
+        <h2>Our Mission</h2>
+        <div className="feature-item">
+          <h3>Decentralized Ownership</h3>
+          <p>Every creation belongs to its creator — secured by blockchain, free from centralized control.</p>
+          <button className="button">Learn More</button>
+        </div>
+        <div className="feature-item">
+          <h3>Empowered Communities</h3>
+          <p>We reward users who create, collaborate, and grow the ecosystem. Community is everything.</p>
+          <button className="button">Get Involved</button>
+        </div>
+        <div className="feature-item">
+          <h3>True Creator Economy</h3>
+          <p>Sell, stake, and monetize art with real autonomy. No gatekeepers. No compromises.</p>
+          <button className="button">Explore the Platform</button>
+        </div>
+      </section>
+
+      {/* Footer Section */}
+      <footer>
+        <p>&copy; 2025 Printaso. All Rights Reserved.</p>
+        <div>
+          <a href="https://twitter.com/printaso" target="_blank">
+            Twitter
+          </a> | 
+          <a href="https://discord.gg/printaso" target="_blank">
+            Discord
+          </a> |
+          <a href="https://telegram.me/printaso" target="_blank">
+            Telegram
+          </a>
+        </div>
       </footer>
     </div>
   );
