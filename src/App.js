@@ -1,7 +1,6 @@
-import React from "react";
-import "./style.css"; // Import the stylesheet
+import React from 'react';
+import './style.css';  // Import the CSS file
 
-// The main App component
 function App() {
   return (
     <div>
@@ -10,24 +9,12 @@ function App() {
         <div className="navbar">
           <h1>Printaso</h1>
           <nav>
-            <a href="index.html" className="nav-link">
-              Home
-            </a>
-            <a href="about.html" className="nav-link">
-              About
-            </a>
-            <a href="token.html" className="nav-link">
-              Our Token
-            </a>
-            <a href="revolution.html" className="nav-link">
-              The Revolution
-            </a>
-            <a href="services.html" className="nav-link">
-              Services
-            </a>
-            <a href="contact.html" className="nav-link">
-              Contact
-            </a>
+            <a href="index.html" className="nav-link">Home</a>
+            <a href="about.html" className="nav-link">About</a>
+            <a href="token.html" className="nav-link">Our Token</a>
+            <a href="revolution.html" className="nav-link">The Revolution</a>
+            <a href="services.html" className="nav-link">Services</a>
+            <a href="contact.html" className="nav-link">Contact</a>
           </nav>
         </div>
       </header>
@@ -42,9 +29,7 @@ function App() {
       {/* About Section */}
       <section className="about-section">
         <h2>Our Story</h2>
-        <p>
-          We saw a broken system where artists, designers, and innovators got paid last. Middlemen took the glory and the profits. Printaso was founded to flip the system on its head — putting creators in full control, powered by Web3 technology and our PTO Token.
-        </p>
+        <p>We saw a broken system where artists, designers, and innovators got paid last. Middlemen took the glory and the profits. Printaso was founded to flip the system on its head — putting creators in full control, powered by Web3 technology and our PTO Token.</p>
       </section>
 
       {/* Features Section */}
@@ -71,15 +56,9 @@ function App() {
       <footer>
         <p>&copy; 2025 Printaso. All Rights Reserved.</p>
         <div>
-          <a href="https://twitter.com/printaso" target="_blank">
-            Twitter
-          </a> | 
-          <a href="https://discord.gg/printaso" target="_blank">
-            Discord
-          </a> |
-          <a href="https://telegram.me/printaso" target="_blank">
-            Telegram
-          </a>
+          <a href="https://twitter.com/printaso" target="_blank">Twitter</a> |
+          <a href="https://discord.gg/printaso" target="_blank">Discord</a> |
+          <a href="https://telegram.me/printaso" target="_blank">Telegram</a>
         </div>
       </footer>
     </div>
