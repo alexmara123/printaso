@@ -2,75 +2,208 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Printaso - Empowering the Creator Economy with Web3. PTO Token for Digital Creators.">
-  <title>Printaso - Empowering Creators with Web3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Printaso</title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      background-color: #111;
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      transition: background-color 0.3s;
+    }
+
+    .navbar a:hover, .navbar a.active {
+      background-color: #007bff;
+    }
+
+    .hero {
+      background-color: #007bff;
+      color: #fff;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    main {
+      padding: 2rem 20px;
+    }
+
+    .about-section {
+      background-color: #fff;
+      padding: 40px 20px;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+    }
+
+    .about-section h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .about-section p {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .feature-item {
+      background-color: #fff;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .feature-item h3 {
+      font-size: 1.5rem;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    .feature-item p {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.4;
+    }
+
+    footer {
+      background-color: #111;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    footer a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #007bff;
+    }
+
+    /* Button Styling */
+    .button {
+      padding: 10px 30px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #0056b3;
+    }
+
+    .feature-item button {
+      margin-top: 15px;
+    }
+
+  </style>
 </head>
 <body>
-  <header>
-    <div class="navbar">
-      <h1>Printaso</h1>
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="services.html">Services</a>
-  <a href="contact.html">Contact</a>
-</nav>
 
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <h2>Empowering the Creator Economy with Web3</h2>
-      <p>Join the Printaso community and earn PTO tokens for your digital creations!</p>
-      <button id="join-button">Join Now</button>
-    </section>
-
-    <!-- Updated Features Section -->
-    <section class="features">
-      <h2>Features</h2>
-      <div class="features-container">
-        <div class="feature-item">
-          <h3>For Creators</h3>
-          <p>Sell digital goods and get paid in PTO tokens.</p>
-        </div>
-        <div class="feature-item">
-          <h3>Token Utility</h3>
-          <p>Use PTO for exclusive content, staking rewards, and more!</p>
-        </div>
-        <div class="feature-item">
-          <h3>Early Access</h3>
-          <p>Get access to airdrops and creator tools by joining now!</p>
-        </div>
-      </div>
-    </section>
-    <!-- End Features -->
-
-  </main>
-
-  <!-- Modal for Join Now Button -->
-  <div id="join-modal" class="modal">
-    <div class="modal-content">
-      <h2>Join the Printaso Movement</h2>
-      <form id="join-form">
-        <input type="email" placeholder="Enter your email" required id="email-input">
-        <button type="submit">Join Now</button>
-      </form>
-    </div>
+<header>
+  <div class="navbar">
+    <h1>Printaso</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="token.html">Our Token</a>
+      <a href="revolution.html">The Revolution</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </div>
+</header>
 
-  <footer>
-    <p>&copy; 2025 Printaso. All Rights Reserved.</p>
-    <div>
-      <a href="https://twitter.com/printaso" target="_blank">Twitter</a> |
-      <a href="https://discord.gg/printaso" target="_blank">Discord</a> |
-      <a href="https://telegram.me/printaso" target="_blank">Telegram</a>
+<main>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Empowering the Future of Creation</h2>
+    <p>Printaso is redefining digital ownership with Web3 and blockchain innovation. Built for creators, by creators.</p>
+    <button class="button">Join the Movement</button>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <h2>Our Story</h2>
+    <p>We saw a broken system where artists, designers, and innovators got paid last. Middlemen took the glory and the profits. Printaso was founded to flip the system on its head — putting creators in full control, powered by Web3 technology and our PTO Token.</p>
+  </section>
+
+  <!-- Mission Section -->
+  <section class="features">
+    <h2>Our Mission</h2>
+    <div class="feature-item">
+      <h3>Decentralized Ownership</h3>
+      <p>Every creation belongs to its creator — secured by blockchain, free from centralized control.</p>
+      <button class="button">Learn More</button>
     </div>
-  </footer>
+    <div class="feature-item">
+      <h3>Empowered Communities</h3>
+      <p>We reward users who create, collaborate, and grow the ecosystem. Community is everything.</p>
+      <button class="button">Get Involved</button>
+    </div>
+    <div class="feature-item">
+      <h3>True Creator Economy</h3>
+      <p>Sell, stake, and monetize art with real autonomy. No gatekeepers. No compromises.</p>
+      <button class="button">Explore the Platform</button>
+    </div>
+  </section>
+</main>
 
-  <script src="script.js"></script>
+<!-- Footer Section -->
+<footer>
+  <p>&copy; 2025 Printaso. All Rights Reserved.</p>
+  <div>
+    <a href="https://twitter.com/printaso" target="_blank">Twitter</a> |
+    <a href="https://discord.gg/printaso" target="_blank">Discord</a> |
+    <a href="https://telegram.me/printaso" target="_blank">Telegram</a>
+  </div>
+</footer>
+
 </body>
 </html>
